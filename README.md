@@ -51,7 +51,7 @@ nodemon server.js
 node server.js
 ```
 
-Backend will run on `http://localhost:5000`
+Backend will run on `http://merntaskmanagerbackend-o9tro85i.b4a.run`
 
 ### 3. Frontend Setup
 Open a new terminal:
