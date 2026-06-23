@@ -1,11 +1,16 @@
 FROM node:20-alpine
 
+# Root se backend folder mein jao
 WORKDIR /app
 
-COPY package*.json ./
+# Pehle backend folder ki package files copy karo
+COPY backend/package*.json ./
+
+# Dependencies install karo
 RUN npm install --production
 
-COPY . .
+# Phir poora backend folder copy karo
+COPY backend/ .
 
 EXPOSE 5000
 
